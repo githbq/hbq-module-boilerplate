@@ -6,30 +6,28 @@
     "scripts": {
         "start:build": "npm run tsc && node build",
         "start": "node run",
-        "test": "mocha src/**/*.test.ts",
+        "test": "jest --forceExit --detectOpenHandles",
         "clear": "rimraf build",
-        "tsc": "npm run clear && tsc",
-        "tsc:w": "npm run clear && tsc -w",
+        "build": "npm run clear && tsc",
+        "watch": "npm run build -- -w",
         "p": "npm run tsc && npm publish",
-        "lint": "tslint \"src/**/*.ts\" --fix"
+        "lint": "tslint \"src/**/*.ts\" --fix",
+        "precommit": "npm run lint"
     },
     "dependencies": {
         "tslib": "^1.9.3"
     },
     "devDependencies": {
-        "@types/mocha": "^5.2.6",
         "@types/node": "^12.0.2",
-        "@types/rimraf": "^2.0.2",
-        "mocha": "^3.3.0",
+        "jest": "^25.1.0",
         "rimraf": "^2.6.3",
-        "should": "^11.2.1",
         "ts-node": "^8.1.0",
         "tslint": "^5.16.0",
         "typescript": "^3.4.5"
     },
     "keywords": [
         "typescript",
-        "base64-demo"
+        "module-polierplate"
     ],
     "author": "hubiqing",
     "repository": "https://github.com/githbq/hbq-module-boilerplate.git",
