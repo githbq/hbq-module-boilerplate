@@ -1,7 +1,7 @@
 {
-    "name": "base64-demo",
+    "name": "module-poilerplate",
     "version": "0.0.1",
-    "description": "base64-demo",
+    "description": "module-poilerplate",
     "main": "build/index.js",
     "scripts": {
         "start:build": "npm run tsc && node build",
