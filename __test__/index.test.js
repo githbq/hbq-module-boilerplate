@@ -2,19 +2,19 @@
 describe('module-poilerplate: index', () => {
   const mocks = {
     files: {
-      scaffoldMobile: { run: jest.fn() }
+      yourModule: { run: jest.fn() }
     }
   }
 
   beforeAll(() => {
-    jest.mock('../ScaffoldMobile', () => function ScaffoldMobile () {
-      return { run: mocks.files.scaffoldMobile.run }
+    jest.mock('../yourModule', () => function yourModule () {
+      return { run: mocks.files.yourModule.run }
     })
   })
 
   test('运行脚手架，调用run方法', () => {
     require('../index')
 
-    expect(mocks.files.scaffoldMobile.run).toHaveBeenCalled()
+    expect(mocks.files.yourModule.run).toHaveBeenCalled()
   })
 })
