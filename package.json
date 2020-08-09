@@ -2,6 +2,9 @@
   "name": "module-poilerplate",
   "version": "1.0.0",
   "description": "module-poilerplate",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "main": "build/index.js",
   "scripts": {
     "start:build": "npm run tsc && node build",
