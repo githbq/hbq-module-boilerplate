@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2017",
     "module": "commonjs",
-    "declaration": true, 
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -10,7 +10,7 @@
     "alwaysStrict": true,
     "sourceMap": true,
     "noEmit": false,
-    "noEmitHelpers": true,
+    "noEmitHelpers": false,
     "importHelpers": true,
     "strictNullChecks": false,
     "allowUnreachableCode": true,
@@ -27,11 +27,8 @@
     "outDir": "./build",
     "rootDir": "./src"
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "**/*.test.ts",
-    "temp"
+  "include": [
+    "./src"
   ],
   "compileOnSave": false,
   "buildOnSave": false
