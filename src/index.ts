@@ -1,7 +1,8 @@
 /**
  * entry
  */
-(async () => {
+!(async () => {
+    debugger
     console.log('hello typescript')
 })()
 
